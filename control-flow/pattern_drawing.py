@@ -1,6 +1,6 @@
 # pattern drawing app
 
-number = int(input("Enter the size of pattern: "))
+user_input = int(input("Enter the size of pattern: "))
 
 c = 1
 
