@@ -1,10 +1,14 @@
-#pattern app
-pattern = int(input("Enter the size of pattern: "))
+# pattern_drawing.py
 
-c = 1
+# Step 1: Prompt the user for the size of the pattern
+size = int(input("Enter the size of the pattern: "))
 
-while c <= pattern:
-    for i in range(pattern):
-       print("*", end="")
-    print()
-    c+=1
+# Step 2: Use a while loop to iterate through each row
+row = 0
+while row < size:
+    # Nested for loop to print asterisks in each row
+    for _ in range(size):
+        print("*", end="")  # Print asterisks on the same line
+    print()  # Move to the next line after each row
+    row += 1
+
