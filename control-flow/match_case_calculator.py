@@ -4,15 +4,15 @@ operation = input("Choose the operation(+, -, *, /): ")
 
 match operation:
     case "+":
-        print(f"The result is {num1 + num2}")
+        print(f"The result is {num1 + num2}.")
     case "-":
-        print(f"The result is {num1 - num2}")
+        print(f"The result is {num1 - num2}.")
     case "*":
-        print(f"The result is {num1 * num2}")
+        print(f"The result is {num1 * num2}.")
     case "/":
         if num2 == 0:
-            print("Cannot divide by zero")
+            print("Cannot divide by zero.")
         else:
-            print(f"The result is {num1 / num2}")
+            print(f"The result is {num1 / num2}.")
     case _:
-        print("Operator does not exist")
+        print("Operator does not exist.")
