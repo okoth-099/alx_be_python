@@ -1,11 +1,10 @@
-# pattern drawing app
-
-user_input = int(input("Enter the size of pattern: "))
+#pattern app
+length = int(input("Enter the size of pattern: "))
 
 c = 1
 
-while c <= user_input:
-    for i in range(user_input):
+while c <= length:
+    for i in range(length):
        print("*", end="")
     print()
     c+=1
