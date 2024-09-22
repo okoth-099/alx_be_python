@@ -6,7 +6,6 @@ c = 1
 
 while c <= number:
     for i in range(number):
-        print("*", end="")
+       print("*", end="")
     print()
     c+=1
-        
