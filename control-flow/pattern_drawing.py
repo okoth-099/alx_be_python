@@ -1,4 +1,5 @@
-# patern drawing app
+# pattern drawing app
+
 number = int(input("Enter the size of pattern: "))
 
 c = 1
