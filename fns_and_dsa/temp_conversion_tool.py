@@ -21,30 +21,24 @@ def convert_to_fahrenheit(celsius):
     except TypeError:
         raise ValueError("Invalid temperature. Please enter a numeric value.")
 
-# Main function for user interaction
-def main():
-    try:
-        # Prompt the user to enter the temperature
-        temp_input = input("Enter the temperature value: ")
-        temperature = float(temp_input)  # Ensure the input is numeric
-        
-        # Prompt the user to enter the temperature unit
-        unit = input("Is the temperature in Celsius (C) or Fahrenheit (F)? ").strip().upper()
+# Prompt the user to enter the temperature
+try:
+    temp_input = input("Enter the temperature value: ")
+    temperature = float(temp_input)  # Ensure the input is numeric
+    
+    # Prompt the user to enter the temperature unit
+    unit = input("Is the temperature in Celsius (C) or Fahrenheit (F)? ").strip().upper()
 
-        # Perform the appropriate conversion based on the user's input
-        if unit == "C":
-            converted_temp = convert_to_fahrenheit(temperature)
-            print(f"{temperature}°C is equal to {converted_temp:.2f}°F")
-        elif unit == "F":
-            converted_temp = convert_to_celsius(temperature)
-            print(f"{temperature}°F is equal to {converted_temp:.2f}°C")
-        else:
-            print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
+    # Perform the appropriate conversion based on the user's input
+    if unit == "C":
+        converted_temp = convert_to_fahrenheit(temperature)
+        print(f"{temperature}°C is equal to {converted_temp:.2f}°F")
+    elif unit == "F":
+        converted_temp = convert_to_celsius(temperature)
+        print(f"{temperature}°F is equal to {converted_temp:.2f}°C")
+    else:
+        print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
 
-    except ValueError:
-        print("Invalid temperature. Please enter a numeric value.")
-
-# Entry point of the script
-if __name__ == "__main__":
-    main()
+except ValueError:
+    print("Invalid temperature. Please enter a numeric value.")
 
