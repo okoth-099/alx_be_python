@@ -1,6 +1,3 @@
-#Part 1: Display the Current Date and Time
-
-
 import datetime
 
 def display_current_datetime():
