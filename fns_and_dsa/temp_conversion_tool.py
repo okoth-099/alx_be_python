@@ -27,7 +27,7 @@ try:
     temperature = float(temp_input)  # Ensure the input is numeric
     
     # Prompt the user to enter the temperature unit
-    unit = input("Is the temperature in Celsius (C) or Fahrenheit (F)? ").strip().upper()
+    unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
 
     # Perform the appropriate conversion based on the user's input
     if unit == "C":
