@@ -6,16 +6,18 @@ def display_current_datetime():
 
 #Part 2: Calculate a Future Date
 
+number_of_days = int(input("Enter the number of days: "))
+
+
+
 # Function to calculate future date
 def calculate_future_date(days):
     current_date = datetime.date.today()  # Get current date
     future_date = current_date + datetime.timedelta(days=days)  # Add days to the current date
     return future_date
 
-# Prompt user for input
-days = int(input("Enter the number of days: "))
 
 # Calculate and print the future date
-future_date = calculate_future_date(days)
+future_date = calculate_future_date(number_of_days)
 print(f"The future date is: {future_date}")
 
