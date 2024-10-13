@@ -29,15 +29,13 @@ class Circle(Shape):
 
 # Example of polymorphic behavior
 if __name__ == "__main__":
-    # Create a list of different shapes
-    shapes = [
-        Rectangle(4, 5),  # Rectangle with length 4 and width 5
-        Circle(3)         # Circle with radius 3
-    ]
+    # Create instances of Rectangle and Circle
+    rectangle = Rectangle(10, 5)  # Rectangle with length 10 and width 5
+    circle = Circle(7)            # Circle with radius 7
 
-    # Loop through each shape and print the area
-    for shape in shapes:
-        print(f"The area of the {shape.__class__.__name__} is {shape.area()}")
+    # Print the areas
+    print(f"The area of the Rectangle is: {rectangle.area()}")
+    print(f"The area of the Circle is: {circle.area()}")
 
 ~
 ~
